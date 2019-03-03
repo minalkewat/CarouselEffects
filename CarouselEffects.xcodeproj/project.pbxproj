@@ -14,6 +14,7 @@
 		1697F6FE222BF47C00A051CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1697F6FC222BF47C00A051CC /* LaunchScreen.storyboard */; };
 		1697F709222BF47C00A051CC /* CarouselEffectsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1697F708222BF47C00A051CC /* CarouselEffectsTests.swift */; };
 		1697F714222BF47C00A051CC /* CarouselEffectsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1697F713222BF47C00A051CC /* CarouselEffectsUITests.swift */; };
+		1697F724222BF51400A051CC /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1697F723222BF51400A051CC /* iCarousel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,9 @@
 		1697F70F222BF47C00A051CC /* CarouselEffectsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarouselEffectsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1697F713222BF47C00A051CC /* CarouselEffectsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselEffectsUITests.swift; sourceTree = "<group>"; };
 		1697F715222BF47C00A051CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1697F721222BF51300A051CC /* CarouselEffects-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CarouselEffects-Bridging-Header.h"; sourceTree = "<group>"; };
+		1697F722222BF51400A051CC /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
+		1697F723222BF51400A051CC /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +103,13 @@
 			children = (
 				1697F6F3222BF47A00A051CC /* AppDelegate.swift */,
 				1697F6F5222BF47A00A051CC /* ViewController.swift */,
+				1697F722222BF51400A051CC /* iCarousel.h */,
+				1697F723222BF51400A051CC /* iCarousel.m */,
 				1697F6F7222BF47A00A051CC /* Main.storyboard */,
 				1697F6FA222BF47C00A051CC /* Assets.xcassets */,
 				1697F6FC222BF47C00A051CC /* LaunchScreen.storyboard */,
 				1697F6FF222BF47C00A051CC /* Info.plist */,
+				1697F721222BF51300A051CC /* CarouselEffects-Bridging-Header.h */,
 			);
 			path = CarouselEffects;
 			sourceTree = "<group>";
@@ -193,6 +200,7 @@
 				TargetAttributes = {
 					1697F6EF222BF47A00A051CC = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					1697F703222BF47C00A051CC = {
 						CreatedOnToolsVersion = 10.1;
@@ -256,6 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1697F724222BF51400A051CC /* iCarousel.m in Sources */,
 				1697F6F6222BF47A00A051CC /* ViewController.swift in Sources */,
 				1697F6F4222BF47A00A051CC /* AppDelegate.swift in Sources */,
 			);
@@ -432,6 +441,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CarouselEffects/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -440,6 +450,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Happykrafts.CarouselEffects;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CarouselEffects/CarouselEffects-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -449,6 +461,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CarouselEffects/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -457,6 +470,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Happykrafts.CarouselEffects;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CarouselEffects/CarouselEffects-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
